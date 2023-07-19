@@ -31,40 +31,41 @@ In order to get started with integrating Google Calendar with SuperAGI, you need
 1. Go to Google Developer Console:
 [https://console.cloud.google.com/](https://console.cloud.google.com/) & Create a new project. If you’re having an existing project, you can proceed with that as well:
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/133874957/c486b2db-6cc5-46a9-8c74-59138a9ea95b" width=600px>
+![GC1](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/9e4299c8-aa5e-49fd-b069-f07a50419e24)
+
 
 2. After the project is created/you’re in your selected project, head to “APIs and Services”
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/968160d6-d5bb-4e1e-9141-d993c9b5bd7c"  width=600px>
-
+![GC2](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/36462ef8-3f28-4c42-a32a-36b6f5489a25)
 
 
 3. Click on “ENABLED APIS AND SERVICES” and search for “Google Calendar”
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/16aa1139-9f38-4938-a094-9a9ce95e721a" width=600px>
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/bb564362-a105-4ef0-ab1c-827822550621" width=600px>
+![GC3](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/792996f4-5f90-497f-a0d8-00556de3f3c3)
+![GC4](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/4fd88f68-5401-4192-ae73-832d1165f532)
+
 
 4. Enable the API
-   
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/4877001f-0ce6-4f6a-9b92-873739c0b9df" width=600px>
-
+ 
+ ![GC5](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/f0b0ce29-2629-46da-93a9-9eeee518cbaf)
+  
 5. Once the API is Enabled, go to “OAuth Consent Screen” 
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/7195b562-9805-44e8-9e9d-2cea216b1447" width=600px>
+![GC6](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/8543411a-dc0c-417c-9197-09f9048c27b9)
 
 6. Select your User Type as “External” and click on "Create"
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/43eb7e77-5292-4564-874b-0dea2b183c21" width=600px>
+![GC7](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/07e7da07-ccfb-417f-9bcd-83feb3d806af)
 
 7. Fill in the required details such as the App Information, App Domain, Authorized Domain, and Developer contact information. Once filled in, click “Save and Continue” 
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/6ce9238e-d951-4fb0-bcc9-3bf054c26b95" width=600px>
+![GC8](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/224efa66-53a9-4161-8bf0-92db4e297d7a)
 
 8. On the next page, you don’t need to select the scopes. Proceed to “save and continue” and at the final page, review the process and click “Back to Dashboard”.  With this, you’ve created your OAuth Consent Screen for Google Calendar.
    
 9. You can go ahead and click the “Publish App” 
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/9e540069-387e-407f-a4e2-bcd0ca0070aa" width=600px>
+![GC9](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/6a3c6e5e-05f8-4482-9023-52effa7e09dd)
 
 ## 🔧 Configuring endpoints & obtaining Client ID and Client Secret Key
 
@@ -72,30 +73,29 @@ In order to obtain the Client ID and Secret ID, you need to do the following ste
 
 1. Go to “Credentials” Page
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/f55aef35-df11-4f35-896a-bb9a0165a537" width=600px>
+![GC10](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/a42b885b-8b10-4af8-b690-afb17ac9581d)
 
 2. Click on “Create Credentials” and click on “OAuth Client ID”
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/cf2959a4-ae79-418d-ba95-09bb7cbb1b49" width=600px>
+![GC11](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/86210cda-b4d1-49cc-a796-3c54bb2c80d9)
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/133874957/84baecb6-c68c-4e10-8efb-430a2965db44" width=600px>
+![GC12](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/11a568c1-a8b6-4fcc-8070-0006cfcb2494)
 
 3. Once you click on OAuth Client ID, choose the type of application as “Web Application” and give it a name of your choice
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/133874957/5f1d83bd-f28a-4969-8e75-59582cf42a5b" width=600px>
+![GC13](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/ca0e76a8-fa55-4648-92b5-55d309b3dc4f)
 
 4. Create JavaScript Origins and add the following details as shown in the image: 
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/439b4398-bb20-4dc0-b622-bb36517ecb9b" width=600px>
-
+![GC14](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/b04d485a-0696-4207-95d8-e464ced6c300)
 
 5. Go to Authorized redirect URIs and add the following as per the image: 
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/f274c547-cb71-4377-807b-633fe708bea4" width=600px>
+![GC15](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/169ed795-21da-4bf2-9b0c-fbd107be1e5c)
 
 6. Once you’re completed with adding the Authorized redirect URIs, you can click “Create” to obtain the Client ID and Client Secret Key
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/17ef51d9-2e6c-4f4a-a50e-2536f6847225" width=600px>
+![GC16](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/a8c9d126-4f6d-4a0e-b534-d06fbb45c162)
 
 7. Copy the Client ID and Secret Key and save it in a file. 
 
@@ -105,7 +105,7 @@ Once the ClientID and Secret Key are obtained, you can configure and authorize C
 
 1. Add your Client ID and Client Secret Key on the toolkit page and click on “Update Changes”
 
-<img src="https://github.com/Phoenix2809/SuperAGI/assets/92881074/c3c44790-5e89-4191-9dcd-230e7ad711b8" width=600px>
+![GC_17](https://github.com/TransformerOptimus/SuperAGI/assets/133874957/bd38fbdc-f7f3-4baf-880d-52fac28834e9)
 
 2. Click on “Authenticate Tool” - which will now take you to the OAuth Flow. 
 
