@@ -89,7 +89,7 @@
 
 <br>
 <p align="center">
-<a href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/Phoenix2809/SuperAGI/tree/dev"> <img src="https://www.deploytodo.com/do-btn-blue.svg"></a><br>Deploy SuperAGI to DigitalOcean with one click.
+<a href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/Phoenix2809/SuperAGI/tree/main"> <img src="https://www.deploytodo.com/do-btn-blue.svg"></a><br>Deploy SuperAGI to DigitalOcean with one click.
 </p>
 
 ## 💡 Features
